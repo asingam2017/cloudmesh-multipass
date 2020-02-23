@@ -56,7 +56,7 @@ class TestMultipass:
         self.p = Provider()
         result = self.p.images()
         Benchmark.Stop()
-        VERBOSE(str(result))
+        VERBOSE(result)
 
         assert (str(result)).index("18.04")
         
